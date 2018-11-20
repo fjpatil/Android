@@ -2,55 +2,6 @@
 
 This project is about showing list of user's post on Recyclerview with Title and Body. Clicking on each post takes to details page where user can see list of users with details like name, email id, first 20 photos of post and user comments on that post.
 
-### Prerequisites
-
-Things you need to install and build application:
-
-```
-Android Studio 2.3.3
-
-Gradle 3.3
-
-compileSdkVersion 25
-
-buildToolsVersion "25.0.2"
-
-minSdkVersion 15
-
-targetSdkVersion 25
-```
-
-### Gradle dependencies
-
-These are the list of gradle dependecies which are needs to be inclcuded in app build.gradle
-
-```
-compile "com.android.support:appcompat-v7:25.1.0"
-compile "com.android.support:recyclerview-v7:25.1.0"
-compile "com.android.support:design:25.1.0"
-compile "com.android.support:cardview-v7:25.1.0"
-
-// Dependencies for local unit and mock tests
-testCompile "junit:junit:4.12"
-testCompile "org.mockito:mockito-all:1.10.19"
-
-//support libraries
-compile 'com.github.bumptech.glide:glide:3.7.0'
-compile 'com.artemzin.rxjava:proguard-rules:1.2.2.0'
-compile 'com.google.dagger:dagger:2.7'
-compile 'com.squareup.okhttp3:okhttp:3.4.1'
-compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
-compile 'io.reactivex:rxjava:1.2.2'
-compile 'com.squareup.retrofit2:retrofit:2.1.0'
-compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-compile 'com.google.code.gson:gson:2.7'
-compile 'io.reactivex:rxandroid:1.2.1'
-provided 'javax.annotation:jsr250-api:1.0'
-apt 'com.google.dagger:dagger-compiler:2.7'
-```
-
-
 ### Running the units tests
 
 1. Go to /src/test/java

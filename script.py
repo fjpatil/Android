@@ -50,7 +50,7 @@ def commit():
 
 def add():
     message = input("\nType in your file name ")
-    message1 = input("\nType in your file name1 ")
+    message1 = input("\nType in your commit message: ")
     fileName = f'{message}'
     commit_message = f'{message1}'
     run("add", fileName)

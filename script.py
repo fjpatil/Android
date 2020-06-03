@@ -47,12 +47,15 @@ def commit():
 
     run("commit", "-am", commit_message)
     run("push", "-u", "origin", "master")
-	
+
 def add():
     message = input("\nType in your file name ")
+    message1 = input("\nType in your file name1 ")
     fileName = f'{message}'
-
+    commit_message = f'{message1}'
     run("add", fileName)
+    run("commit", "-am", commit_message)
+    run("push", "-u", "origin", "master")
 
 def branch():
     branch = input("\nType in the name of the branch you want to make: ")
@@ -166,9 +169,9 @@ def main():
     choose_command = input("Type in the command you want to use: ")
     choose_command = choose_command.lower()
 
-    if choose_command == "clone":
-        clone()
-
+    if choose_command == "start":
+        add()
+		
     elif choose_command == "commit":
         commit()
 
